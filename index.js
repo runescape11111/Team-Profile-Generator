@@ -160,7 +160,7 @@ function askMember() {
             type : "list",
             name : "choice",
             message : "Add a new member?",
-            choices : ["Engineer","Intern","No"],
+            choices : ["Engineer","Intern","No, we're done here"],
         },
     ])
     .then((data) => {
