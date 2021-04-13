@@ -120,7 +120,7 @@ function addIntern() {
 };
 
 function makeCard(obj) {
-    const partOne = `            <div class = "col-12 col-md-6 col-lg-3 col-xl-2 px-2">
+    const partOne = `            <div class = "col-12 col-md-6 col-lg-4 col-xl-3 px-2">
                 <div class = "card m-1 border-primary">
                     <div class = "card-header bg-primary">
                         <h4 class = "card-title text-light">${obj.getName()}</h4>
