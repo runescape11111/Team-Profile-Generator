@@ -1,4 +1,3 @@
-const { it, describe, expect } = require("@jest/globals");
 const Employee = require("../lib/employee");
 const name = "Oli";
 const id = 5;
@@ -42,7 +41,6 @@ describe("Employee",() => {
     describe("getName", () => {
         it("should return the name of the employee", () => {
             const obj = new Employee(name,id,email);
-
             const objName = obj.getName();
             
             expect(objName).toEqual(name);
@@ -52,7 +50,6 @@ describe("Employee",() => {
     describe("getId", () => {
         it("should return the id of the employee", () => {
             const obj = new Employee(name,id,email);
-
             const objId = obj.getId();
             
             expect(objId).toEqual(id);
@@ -62,7 +59,6 @@ describe("Employee",() => {
     describe("getEmail", () => {
         it("should return the email of the employee", () => {
             const obj = new Employee(name,id,email);
-
             const objEmail = obj.getEmail();
             
             expect(objEmail).toEqual(email);
@@ -72,7 +68,6 @@ describe("Employee",() => {
     describe("getRole", () => {
         it("should return the role of the employee", () => {
             const obj = new Employee(name,id,email);
-
             const objRole = obj.getRole();
             
             expect(objRole).toEqual("Employee");
