@@ -14,7 +14,7 @@ describe("Employee",() => {
         });
 
         it("should throw an error with an invalid id input", () => {
-            const cb = () => new Employee(name,[],email);
+            const cb = () => new Employee(name,"egg",email);
             const err = new Error("Expected parameter 'id' to be a positive integer");
 
             expect(cb).toThrowError(err);
